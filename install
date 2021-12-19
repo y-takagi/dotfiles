@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -e
+
+current_path=`pwd`
+repo_path=$(cd $(dirname $0);pwd)
+
+mkdir -p $HOME/.config/git
+ln -sf $repo_path/src/ignore $HOME/.config/git/
+
+for f in $repo_path/src/.[^.]* ; do
+    ln -sf $f $HOME/
+done

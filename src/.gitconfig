@@ -1,0 +1,39 @@
+[user]
+  name = y-takagi
+  email = ytakagi.deb@gmail.com
+
+[color]
+  status = auto
+  diff = auto
+  branch = auto
+  interactive = auto
+  grep = auto
+  ui = auto
+
+[push]
+  default = tracking
+
+[core]
+  excludesfile = ~/.gitignore_global
+  autocrlf = input
+
+[include]
+  path = ~/.gitconfig.local
+
+[alias]
+  cm = commit
+  st = status --ignore-submodules=dirty
+  df = diff --ignore-submodules=dirty
+  dfc = diff --cached --ignore-submodules=dirty
+  co = checkout
+  br = branch
+  web = browse-remote
+  lg = log --date=local
+  lgraph = log --oneline --graph --decorate --all --date=local
+  up-sub = submodule foreach 'git pull origin master'
+
+[ghq]
+  root = ~/.go/src
+  root = ~/ghq
+[init]
+	defaultBranch = main
