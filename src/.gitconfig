@@ -14,7 +14,6 @@
   default = tracking
 
 [core]
-  excludesfile = ~/.gitignore_global
   autocrlf = input
 
 [include]
@@ -35,5 +34,6 @@
 [ghq]
   root = ~/.go/src
   root = ~/ghq
+
 [init]
 	defaultBranch = main
