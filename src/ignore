@@ -2,6 +2,5 @@
 .envrc
 .direnv/
 .pip/
-.node-version
 flycheck_*
 .log/
