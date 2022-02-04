@@ -24,7 +24,9 @@ if [ -d "$lsp_kotlin_path" ]; then
 fi
 
 ## Homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if [ -f "/opt/homebrew/bin/brew" ]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
 
 ## anyenv
 if type anyenv &>/dev/null; then
