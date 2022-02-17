@@ -1,3 +1,13 @@
+## Homebrew
+if [ -f "/opt/homebrew/bin/brew" ]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+## anyenv
+if type anyenv &>/dev/null; then
+    eval "$(anyenv init -)"
+fi
+
 if type brew &>/dev/null; then
     ## Zsh Completions
     FPATH="$(brew --prefix)/share/zsh-completions:${FPATH}"
