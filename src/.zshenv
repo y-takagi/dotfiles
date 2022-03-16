@@ -1,5 +1,7 @@
 ## Environment Variable
 export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
+export FLUTTER_ROOT=$HOME/Library/flutter
+export PUB_CACHE=$HOME/.pub-cache
 export EDITOR="emacsclient -n $@"
 export GOPATH=$HOME/go
 export GOENV_DISABLE_GOPATH=1
@@ -17,7 +19,8 @@ fi
 export PATH=$ANDROID_SDK_ROOT/tools:$PATH
 export PATH=$ANDROID_SDK_ROOT/platform-tools:$PATH
 export PATH=$GOPATH/bin:$PATH
-export PATH=$HOME/Library/flutter/bin:$PATH
+export PATH=$FLUTTER_ROOT/bin:$PATH
+export PATH=$PUB_CACHE/bin:$PATH
 
 lsp_kotlin_path="$HOME/.emacs.d/.cache/lsp/kotlin/server/bin"
 if [ -d "$lsp_kotlin_path" ]; then
