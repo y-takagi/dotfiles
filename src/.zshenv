@@ -1,8 +1,8 @@
 ## Environment Variable
 export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
-export FLUTTER_ROOT=$HOME/Library/flutter
-export PUB_CACHE=$HOME/.pub-cache
 export EDITOR="emacsclient -n $@"
+export FLUTTER_ROOT=$HOME/Library/flutter
+export PUB_CACHE=$FLUTTER_ROOT/.pub-cache
 export GOPATH=$HOME/go
 export GOENV_DISABLE_GOPATH=1
 export LANG=ja_JP.UTF-8
