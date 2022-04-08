@@ -10,6 +10,7 @@ export LESS='-g -i -M -R'
 export PAGER=less
 export PIPENV_VENV_IN_PROJECT=1
 export DBC_USER=yukiya.takagi@every.tv
+export LSP_USE_PLISTS=true
 
 if [ -d "/Applications/Android Studio.app/Contents/jre/Contents/Home/" ]; then
     export JAVA_HOME="/Applications/Android Studio.app/Contents/jre/Contents/Home/"
