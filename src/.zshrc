@@ -18,6 +18,10 @@ if type brew &>/dev/null; then
     test -r $git_prompt && . $git_prompt
 fi
 
+if type direnv &>/dev/null; then
+    eval "$(direnv hook zsh)"
+fi
+
 ## Enable zsh completions
 autoload -Uz compinit && compinit
 
@@ -38,6 +42,7 @@ setopt IGNOREEOF
 ## alias
 alias dps='docker ps -a'
 alias drm='docker rm $(docker ps -f status=exited -q)'
+alias e='emacsclient -n'
 alias em='open /Applications/Emacs.app'
 alias l='ls -G'
 alias ll='ls -alG'

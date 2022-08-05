@@ -4,3 +4,4 @@
 .pip/
 flycheck_*
 .log/
+.dir-locals.el
