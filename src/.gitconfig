@@ -40,3 +40,5 @@
 
 [remote "origin"]
 	prune = true
+[diff]
+	external = difft
