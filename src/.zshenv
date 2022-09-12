@@ -22,6 +22,7 @@ export PATH=$ANDROID_SDK_ROOT/platform-tools:$PATH
 export PATH=$GOPATH/bin:$PATH
 export PATH=$FLUTTER_ROOT/bin:$PATH
 export PATH=$PUB_CACHE/bin:$PATH
+export PATH=/usr/local/opt/mysql-client/bin:$PATH
 
 lsp_kotlin_path="$HOME/.emacs.d/.cache/lsp/kotlin/server/bin"
 if [ -d "$lsp_kotlin_path" ]; then
