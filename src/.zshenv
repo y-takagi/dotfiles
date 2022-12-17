@@ -28,3 +28,6 @@ lsp_kotlin_path="$HOME/.emacs.d/.cache/lsp/kotlin/server/bin"
 if [ -d "$lsp_kotlin_path" ]; then
     export PATH=$lsp_kotlin_path:$PATH
 fi
+
+## Rust PATH
+. "$HOME/.cargo/env"
