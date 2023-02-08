@@ -30,4 +30,6 @@ if [ -d "$lsp_kotlin_path" ]; then
 fi
 
 ## Rust PATH
-. "$HOME/.cargo/env"
+if [ -d "$HOME/.cargo" ]; then
+   . "$HOME/.cargo/env"
+fi

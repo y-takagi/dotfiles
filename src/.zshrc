@@ -46,6 +46,7 @@ alias e='emacsclient -n'
 alias em='open /Applications/Emacs.app'
 alias l='ls -G'
 alias ll='ls -alG'
+alias relogin='exec $SHELL -l'
 alias repo='cd $(ghq list -p | peco)'
 alias tm='tmux a'
 

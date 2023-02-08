@@ -4,9 +4,17 @@ set -e
 current_path=`pwd`
 repo_path=$(cd $(dirname $0);pwd)
 
+# Setup dotfiles
 mkdir -p $HOME/.config/git
 ln -sf $repo_path/src/ignore $HOME/.config/git/
 
 for f in $repo_path/src/.[^.]* ; do
     ln -sf $f $HOME/
 done
+
+# Install brew
+if type brew > /dev/null 2>&1; then
+    brew bundle
+    ln -si $(brew --prefix)/opt/emacs-plus@28/Emacs.app /Applications
+    chmod -R go-w $(brew --prefix)/share
+fi
