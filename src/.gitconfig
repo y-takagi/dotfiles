@@ -16,9 +16,6 @@
 [core]
 	autocrlf = input
 
-[include]
-	path = ~/.gitconfig.local
-
 [alias]
 	cm = commit
 	st = status --ignore-submodules=dirty
@@ -40,5 +37,9 @@
 
 [remote "origin"]
 	prune = true
+
 [diff]
 	external = difft
+
+[include]
+	path = ~/.gitconfig.local
