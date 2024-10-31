@@ -60,7 +60,9 @@ zle -N peco_history
 bindkey "^r" peco_history
 
 setopt prompt_subst
-PS1='[%m@%c$(__git_ps1)]%# '
+PS1='
+[%m@%c$(__git_ps1)]
+%# '
 
 if [[ "$INSIDE_EMACS" = 'vterm' ]] && [[ -z "$TMUX" ]]; then
     tmux new -As0
