@@ -1,7 +1,5 @@
 tap "d12frosted/emacs-plus"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
 brew "anyenv"
 brew "awscli"
 brew "cocoapods"
