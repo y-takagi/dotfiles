@@ -15,6 +15,6 @@ done
 # Install brew
 if type brew > /dev/null 2>&1; then
     brew bundle
-    ln -si $(brew --prefix)/opt/emacs-plus@28/Emacs.app /Applications
+    ln -si $(brew --prefix)/opt/emacs-plus@29/Emacs.app /Applications
     chmod -R go-w $(brew --prefix)/share
 fi
