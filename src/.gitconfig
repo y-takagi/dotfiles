@@ -38,9 +38,6 @@
 [remote "origin"]
 	prune = true
 
-[diff]
-	external = difft
-
 [include]
 	path = ~/.gitconfig.local
 [filter "lfs"]
