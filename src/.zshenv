@@ -1,6 +1,6 @@
 ## Environment Variable
 export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
-export EDITOR="emacsclient -n $@"
+export EDITOR="emacsclient"
 export FLUTTER_ROOT=$HOME/Library/flutter
 export PUB_CACHE=$FLUTTER_ROOT/.pub-cache
 export GOPATH=$HOME/go
@@ -9,7 +9,6 @@ export LANG=ja_JP.UTF-8
 export LESS='-g -i -M -R'
 export PAGER=less
 export PIPENV_VENV_IN_PROJECT=1
-export DBC_USER=yukiya.takagi@every.tv
 export LSP_USE_PLISTS=true
 
 if [ -d "/Applications/Android Studio.app/Contents/jre/Contents/Home/" ]; then
