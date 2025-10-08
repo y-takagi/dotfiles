@@ -3,11 +3,6 @@ if [ -f "/opt/homebrew/bin/brew" ]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
-## anyenv
-if type anyenv &>/dev/null; then
-    eval "$(anyenv init -)"
-fi
-
 if type brew &>/dev/null; then
     ## Zsh Completions
     FPATH="$(brew --prefix)/share/zsh-completions:${FPATH}"
@@ -18,8 +13,8 @@ if type brew &>/dev/null; then
     test -r $git_prompt && . $git_prompt
 fi
 
-if type direnv &>/dev/null; then
-    eval "$(direnv hook zsh)"
+if type mise &>/dev/null; then
+    eval "$(mise activate zsh)"
 fi
 
 ## Enable zsh completions
@@ -48,6 +43,7 @@ alias l='ls -G'
 alias ll='ls -alG'
 alias relogin='exec $SHELL -l'
 alias repo='cd $(ghq list -p | peco)'
+alias gitco='git checkout $(git branch | sed -r "s/^[ \*]+//" | peco)'
 alias tm='tmux a'
 
 ## peco history

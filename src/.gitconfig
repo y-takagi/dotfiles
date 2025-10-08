@@ -15,6 +15,7 @@
 
 [core]
 	autocrlf = input
+	editor = code --wait
 
 [alias]
 	cm = commit
