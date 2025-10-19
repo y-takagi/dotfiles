@@ -18,7 +18,7 @@ brew "ripgrep"
 brew "tig"
 brew "tmux"
 brew "zsh-completions"
-brew "d12frosted/emacs-plus/emacs-plus", args: ["with-native-comp"]
+brew "d12frosted/emacs-plus/emacs-plus"
 cask "maccy"
 cask "ngrok"
 cask "sequel-ace"
