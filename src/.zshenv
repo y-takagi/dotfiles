@@ -1,6 +1,6 @@
 ## Environment Variable
 export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
-export EDITOR="emacsclient"
+export EDITOR="nano"
 export FLUTTER_ROOT=$HOME/Library/flutter
 export PUB_CACHE=$FLUTTER_ROOT/.pub-cache
 export GOPATH=$HOME/go
@@ -23,11 +23,7 @@ export PATH=$FLUTTER_ROOT/bin:$PATH
 export PATH=$PUB_CACHE/bin:$PATH
 export PATH=/opt/homebrew/opt/mysql-client@8.4/bin:$PATH
 export PATH=/opt/homebrew/opt/libpq/bin:$PATH
-
-lsp_kotlin_path="$HOME/.emacs.d/.cache/lsp/kotlin/server/bin"
-if [ -d "$lsp_kotlin_path" ]; then
-    export PATH=$lsp_kotlin_path:$PATH
-fi
+export PATH=$HOME/.local/bin:$PATH
 
 ## Rust PATH
 if [ -d "$HOME/.cargo" ]; then
