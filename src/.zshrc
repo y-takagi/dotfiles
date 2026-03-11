@@ -59,7 +59,3 @@ setopt prompt_subst
 PS1='
 [%m@%c$(__git_ps1)]
 %# '
-
-if [[ "$INSIDE_EMACS" = 'vterm' ]] && [[ -z "$TMUX" ]]; then
-    tmux new -As0
-fi

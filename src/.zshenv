@@ -10,6 +10,7 @@ export LESS='-g -i -M -R'
 export PAGER=less
 export PIPENV_VENV_IN_PROJECT=1
 export LSP_USE_PLISTS=true
+export ENABLE_LSP_TOOL=1
 
 if [ -d "/Applications/Android Studio.app/Contents/jre/Contents/Home/" ]; then
     export JAVA_HOME="/Applications/Android Studio.app/Contents/jre/Contents/Home/"
