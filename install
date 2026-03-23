@@ -8,13 +8,10 @@ repo_path=$(cd $(dirname $0);pwd)
 mkdir -p $HOME/.config/git
 ln -sf $repo_path/src/ignore $HOME/.config/git/
 
+mkdir -p $HOME/.config/zed
+ln -sf $repo_path/src/config/zed/settings.json $HOME/.config/zed/settings.json
+ln -sf $repo_path/src/config/zed/keymap.json $HOME/.config/zed/keymap.json
+
 for f in $repo_path/src/.[^.]* ; do
     ln -sf $f $HOME/
 done
-
-# Install brew
-if type brew > /dev/null 2>&1; then
-    brew bundle
-    ln -si $(brew --prefix)/opt/emacs-plus@29/Emacs.app /Applications
-    chmod -R go-w $(brew --prefix)/share
-fi

@@ -1,0 +1,106 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "agent": {
+    "default_model": {
+      "provider": "google",
+      "model": "gemini-2.5-flash",
+      "enable_thinking": true,
+    },
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "agent_buffer_font_size": 14.0,
+  "auto_install_extensions": {
+    "html": true,
+    "catppuccin": true,
+    "catppuccin-icons": true,
+    "git-firefly": true,
+    "make": true,
+  },
+  "base_keymap": "Emacs",
+  "buffer_font_family": "HackGen Console NF",
+  "buffer_font_size": 14.0,
+  "buffer_font_weight": 400.0,
+  "buffer_line_height": "standard",
+  "cursor_shape": "block",
+  "ensure_final_newline_on_save": true,
+  "git": {
+    "inline_blame": {
+      "enabled": false,
+    },
+  },
+  "git_panel": {
+    "tree_view": false,
+    "dock": "left",
+  },
+  "gutter": {
+    "folds": false,
+  },
+  "icon_theme": "Catppuccin Mocha",
+  "indent_guides": {
+    "enabled": false,
+  },
+  "inline_code_actions": false,
+  "inlay_hints": {
+    "show_value_hints": true,
+  },
+  "languages": {
+    "TypeScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true,
+      },
+    },
+  },
+  "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+      },
+      "enable_lsp_tasks": true,
+    },
+  },
+  "minimap": {
+    "show": "never",
+  },
+  "prettier": {
+    "allowed": true,
+  },
+  "soft_wrap": "editor_width",
+  "show_whitespaces": "boundary",
+  "terminal": {
+    "dock": "right",
+    "font_size": 14.0,
+    "blinking": "on",
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "theme": "Catppuccin Mocha",
+  "toolbar": {
+    "code_actions": true,
+  },
+  "ui_font_family": ".ZedSans",
+  "ui_font_size": 14.0,
+  "use_system_prompts": true,
+  "whitespace_map": {
+    "space": " ",
+    "tab": "→",
+  },
+}
