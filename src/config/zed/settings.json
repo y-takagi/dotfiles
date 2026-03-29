@@ -7,6 +7,8 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "vertical_scroll_margin": 30.0,
+  "scroll_beyond_last_line": "vertical_scroll_margin",
   "auto_install_extensions": {
     "html": true,
     "catppuccin": true,
