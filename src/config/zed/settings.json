@@ -49,6 +49,11 @@
         "source.fixAll.eslint": true,
       },
     },
+    "TSX": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true,
+      },
+    },
   },
   "lsp": {
     "vtsls": {
@@ -79,7 +84,7 @@
   "soft_wrap": "editor_width",
   "show_whitespaces": "boundary",
   "terminal": {
-    "dock": "right",
+    "dock": "bottom",
     "font_size": 14.0,
     "blinking": "on",
   },
