@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-mise prune --config
+mise prune --configs
