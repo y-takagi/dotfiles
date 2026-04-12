@@ -4,14 +4,20 @@ set -e
 current_path=`pwd`
 repo_path=$(cd $(dirname $0);pwd)
 
-# Setup dotfiles
+# Link git config
 mkdir -p $HOME/.config/git
 ln -sf $repo_path/src/ignore $HOME/.config/git/
 
+# Link zed config
 mkdir -p $HOME/.config/zed
 ln -sf $repo_path/src/config/zed/settings.json $HOME/.config/zed/settings.json
 ln -sf $repo_path/src/config/zed/keymap.json $HOME/.config/zed/keymap.json
 
+# Link mise config
+mkdir -p $HOME/.config/mise
+ln -sf $repo_path/src/config/mise/config.toml $HOME/.config/mise/config.toml
+
+# Link config files
 for f in $repo_path/src/.[^.]* ; do
     ln -sf $f $HOME/
 done
