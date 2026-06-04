@@ -7,5 +7,3 @@ flycheck_*
 .dir-locals.el
 
 **/.claude/settings.local.json
-
-.superset/

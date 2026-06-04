@@ -66,4 +66,11 @@
       "ctrl-z g": "pane::DeploySearch",
     },
   },
+  {
+    "context": "MessageEditor > Editor",
+    "bindings": {
+      "enter": "editor::Newline",
+      "cmd-enter": "agent::Chat",
+    },
+  },
 ]

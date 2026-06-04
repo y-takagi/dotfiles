@@ -7,6 +7,31 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "agent_ui_font_size": 14.0,
+  "agent_servers": {
+    },
+  "disable_ai": false,
+  "cli_default_open_behavior": "new_window",
+  "project_panel": {
+    "dock": "right",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "button": false,
+    "dock": "left",
+  },
+  "agent": {
+    "expand_terminal_card": false,
+    "expand_edit_card": false,
+    "flexible": true,
+    "limit_content_width": false,
+    "sidebar_side": "left",
+    "dock": "left",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
   "vertical_scroll_margin": 30.0,
   "scroll_beyond_last_line": "vertical_scroll_margin",
   "auto_install_extensions": {
