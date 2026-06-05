@@ -59,3 +59,7 @@ setopt prompt_subst
 PS1='
 [%m@%c$(__git_ps1)]
 %# '
+
+
+# Added by Antigravity CLI installer
+export PATH="/Users/yukiya.takagi/.local/bin:$PATH"
