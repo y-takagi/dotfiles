@@ -16,6 +16,7 @@
 [core]
 	autocrlf = input
 	editor = code --wait
+	quotepath = false
 
 [alias]
 	cm = commit
@@ -46,3 +47,5 @@
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
+[submodule]
+	recurse = true

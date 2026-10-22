@@ -1,6 +1,8 @@
 ## Homebrew
 if [ -f "/opt/homebrew/bin/brew" ]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
+    ## Homebrew curl (keg-only) を /usr/bin/curl より優先
+    export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 fi
 
 if type brew &>/dev/null; then
