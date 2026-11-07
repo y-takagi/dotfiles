@@ -46,7 +46,6 @@ alias ll='ls -alG'
 alias relogin='exec $SHELL -l'
 alias repo='cd $(ghq list -p | peco)'
 alias gitco='git checkout $(git branch | sed -r "s/^[ \*]+//" | peco)'
-alias tm='tmux a'
 
 ## peco history
 function peco_history() {
