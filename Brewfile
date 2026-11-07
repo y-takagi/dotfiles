@@ -1,5 +1,4 @@
 tap "hashicorp/tap"
-tap "homebrew/bundle"
 brew "aws-cdk"
 brew "awscli"
 brew "colima"
