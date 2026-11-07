@@ -20,7 +20,8 @@ if type mise &>/dev/null; then
 fi
 
 ## Enable zsh completions
-autoload -Uz compinit && compinit
+## -u: Homebrew のディレクトリが group writable でも insecure directories 警告を出さずに読み込む
+autoload -Uz compinit && compinit -u
 
 ## Remove duplicates in PATH
 typeset -U path
